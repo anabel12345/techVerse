@@ -1,0 +1,31 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select: none;
+}
+
+/* Set backround image and minimum dimenstions of the content */
+#content{
+    background-image: url('./images/bg4.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-width: 600;
+    min-height: 800;
+}
+
+/* Create overlay over background */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Hide the scrollbar */
+::-webkit-scrollbar{
+    display:none;
+}

@@ -1,0 +1,58 @@
+dialog#dialog{
+    position:fixed;
+    margin:auto;
+    background-color: rgba(0,0,0,0.9);
+    border-radius:35px;
+    color:white;
+    padding:60px;
+    z-index:20;
+    font-family: 'Share Tech', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    max-width:90vw;
+}
+
+dialog#dialog h1{
+    font-size:3rem;
+}
+dialog#dialog p{
+    font-size:2rem;
+}
+
+dialog#dialog button#close{
+    font-size:3rem;
+    padding:30px;
+    margin:auto;
+    border-radius:15px;
+    background-color: white;
+    font-family: 'Share Tech', sans-serif;
+
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: white;
+    
+    color: white;
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .15s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+  
+    border: 0;
+  
+    
+  }
+  
+  
+  dialog#dialog button#close:hover,
+  dialog#dialog button#close:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .01em;
+  }
+  
